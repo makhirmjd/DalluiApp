@@ -8,9 +8,16 @@
     Title="DalluiApp"
     Shell.NavBarIsVisible="False">
 
-    <ShellContent
+    <!--
+        ShellContent
         Title="Dashboard"
         ContentTemplate="{DataTemplate views:DashboardPageView}"
-        Route="Dashboard" />
+        Route="Dashboard" /
+    -->
+
+    <ShellContent
+        Title="Generate Options"
+        ContentTemplate="{DataTemplate views:GenerateOptionsPageView}"
+        Route="GenerateOptions" />
 
 </Shell>

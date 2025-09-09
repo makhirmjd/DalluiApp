@@ -35,8 +35,10 @@ namespace DalluiApp
         {
             services.AddTransient<AppShell>();
             services.AddTransient<DashboardPageView>();
+            services.AddTransient<GenerateOptionsPageView>();
 
             services.AddTransient<DashboardPageViewModel>();
+            services.AddTransient<GenerateOptionsPageViewModel>();
         }
     }
 }
