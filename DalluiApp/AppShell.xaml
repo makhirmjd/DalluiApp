@@ -15,9 +15,16 @@
         Route="Dashboard" /
     -->
 
-    <ShellContent
+    <!--
+        ShellContent
         Title="Generate Options"
         ContentTemplate="{DataTemplate views:GenerateOptionsPageView}"
-        Route="GenerateOptions" />
+        Route="GenerateOptions" /
+    -->
+
+    <ShellContent
+        Title="Image Generator"
+        ContentTemplate="{DataTemplate views:ImageGeneratorPageView}"
+        Route="ImageGenerator" />
 
 </Shell>

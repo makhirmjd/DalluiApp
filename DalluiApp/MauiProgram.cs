@@ -3,6 +3,7 @@ using DalluiApp.ViewModels;
 using DalluiApp.Views;
 using Microsoft.Extensions.Logging;
 using PanCardView;
+using SkiaSharp.Views.Maui.Controls.Hosting;
 
 namespace DalluiApp
 {
@@ -14,6 +15,7 @@ namespace DalluiApp
             builder
                 .UseMauiApp<App>()
                 .UseCardsView()
+                .UseSkiaSharp()
                 .UseMauiCommunityToolkit()
                 .ConfigureFonts(fonts =>
                 {
@@ -36,9 +38,11 @@ namespace DalluiApp
             services.AddTransient<AppShell>();
             services.AddTransient<DashboardPageView>();
             services.AddTransient<GenerateOptionsPageView>();
+            services.AddTransient<ImageGeneratorPageView>();
 
             services.AddTransient<DashboardPageViewModel>();
             services.AddTransient<GenerateOptionsPageViewModel>();
+            services.AddTransient<ImageGeneratorPageViewModel>();
         }
     }
 }
