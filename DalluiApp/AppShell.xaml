@@ -8,12 +8,10 @@
     Title="DalluiApp"
     Shell.NavBarIsVisible="False">
 
-    <!--
-        ShellContent
+    <ShellContent
         Title="Dashboard"
         ContentTemplate="{DataTemplate views:DashboardPageView}"
-        Route="Dashboard" /
-    -->
+        Route="Dashboard" />
 
     <!--
         ShellContent
@@ -22,9 +20,11 @@
         Route="GenerateOptions" /
     -->
 
-    <ShellContent
+    <!--
+        ShellContent
         Title="Image Generator"
         ContentTemplate="{DataTemplate views:ImageGeneratorPageView}"
-        Route="ImageGenerator" />
+        Route="ImageGenerator" /
+    -->
 
 </Shell>

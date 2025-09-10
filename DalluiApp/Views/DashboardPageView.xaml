@@ -3,6 +3,7 @@
     x:Class="DalluiApp.Views.DashboardPageView"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:acrylic="clr-namespace:Xe.AcrylicView;assembly=Xe.AcrylicView"
     xmlns:cards="clr-namespace:PanCardView;assembly=PanCardView"
     xmlns:models="clr-namespace:DalluiApp.Models"
     xmlns:processors="clr-namespace:PanCardView.Processors;assembly=PanCardView"
@@ -117,11 +118,7 @@
                                 Grid.RowSpan="2"
                                 Aspect="AspectFill"
                                 Source="{Binding ImagePath}" />
-                            <Grid Grid.Row="1">
-                                <Rectangle
-                                    Fill="Black"
-                                    Opacity="0.5"
-                                    StrokeThickness="0" />
+                            <acrylic:AcrylicView Grid.Row="1">
                                 <VerticalStackLayout Margin="10,0,0,0" VerticalOptions="Center">
                                     <Label
                                         FontFamily="NexaHeavy"
@@ -134,7 +131,7 @@
                                         Text="{Binding Keywords, Converter={StaticResource ListToStringConverter}}"
                                         TextColor="White" />
                                 </VerticalStackLayout>
-                            </Grid>
+                            </acrylic:AcrylicView>
                         </Grid>
                     </Border>
                 </DataTemplate>
